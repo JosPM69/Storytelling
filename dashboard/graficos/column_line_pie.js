@@ -1,6 +1,6 @@
 Highcharts.chart('column_line_pie', {
     title: {
-        text: 'Top 5 de marcarillas mas vendidas'
+        text: 'Top 5 de marcarillas mas vendidas (S/.)'
     },
     xAxis: {
         categories: ['Mayo', 'Junio', 'Julio', 'Agosto']

@@ -54,10 +54,10 @@
 
         <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
           <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-            <h1 class="h2">PREGUNTAS DE EXPLORACIÓN</h1>
+            <h1 class="h2">Análisis exploratorio</h1>
           </div>
-          <h5></h5>
           <div class="table-responsive">
+            <h5 style="font-size: 25px;">1. Diferencia en los precios mínimos de las columnas "PECIO UNIT" y "TOTALPAID"</h5>
             <figure class="highcharts-figure">
               <div id="column_range"></div>
               <p class="highcharts-description">
@@ -67,51 +67,44 @@
             
             <figure class="highcharts-figure">
               <div id="column_min"></div>
-              <p class="highcharts-description">
+              <p class="highcharts-description" style="font-size: 25px; text-align: center;">
                 En el gráfico Column Range podemos visualizar el mínimo y el máximo del precio final de los productos, 
                 la razón por la cual hay un precio total más bajo que el precio unitario de los productos es porque a éstos les 
                 afectan variables como la cantidad de unidades y el descuento ofrecido por la empresa.
               </p>
             </figure>  
            
-
+            <h5 style="font-size: 25px;">2. Diferencia del valor recaudado por el total de unidades vendidas con el valor monetario total</h5>
             <figure class="highcharts-figure">
               <div id="column_line_pie"></div>
               <p class="highcharts-description">
-                  A basic column chart compares rainfall values between four cities.
-                  Tokyo has the overall highest amount of rainfall, followed by New York.
-                  The chart is making use of the axis crosshair feature, to highlight
-                  months as they are hovered over.
+
               </p>
             </figure>  
 
             <figure class="highcharts-figure">
               <div id="pie"></div>
-              <p class="highcharts-description">
-                  A basic column chart compares rainfall values between four cities.
-                  Tokyo has the overall highest amount of rainfall, followed by New York.
-                  The chart is making use of the axis crosshair feature, to highlight
-                  months as they are hovered over.
+              <p class="highcharts-description" style="font-size: 25px; text-align: center;">
+                Como se puede observar en los gráficos anteriores, la cantidad monetaria total recaudada por modelo de mascarilla no
+                está directamente relacionada con la cantidad de unidades vendidas, esto sucede debido a causas como el precio de cada modelo y 
+                la cantidad de compra.
               </p>
             </figure> 
 
+            <h5 style="font-size: 25px;">3. Distribución de ventas de acuerdo a las tallas disponibles</h5>
             <figure class="highcharts-figure">
               <div id="pie_tallas"></div>
               <p class="highcharts-description">
-                  A basic column chart compares rainfall values between four cities.
-                  Tokyo has the overall highest amount of rainfall, followed by New York.
-                  The chart is making use of the axis crosshair feature, to highlight
-                  months as they are hovered over.
+                  
               </p>
             </figure> 
 
             <figure class="highcharts-figure">
               <div id="stacked_column"></div>
-              <p class="highcharts-description">
-                  A basic column chart compares rainfall values between four cities.
-                  Tokyo has the overall highest amount of rainfall, followed by New York.
-                  The chart is making use of the axis crosshair feature, to highlight
-                  months as they are hovered over.
+              <p class="highcharts-description" style="font-size: 25px; text-align: center;">
+                De acuerdo a las presentaciones vistas, logramos visualizar cómo la talla más vendida de la totalidad de ventas es la "M",
+                así también logrando posicionarse a la cabeza en las distintas provincias, que por cierto ocupan el top 10 de las provincias
+                con más pedidos de mascarillas
               </p>
             </figure> 
 

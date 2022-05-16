@@ -1,0 +1,196 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Visualización de datos y Storytelling</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <meta name="theme-color" content="#7952b3">
+
+  </head>
+  <body>
+
+    <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+      <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">Visualización de datos y storytelling</a>
+      <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </header>
+
+    <div class="container-fluid">
+      <div class="row">
+        <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+          <div class="position-sticky pt-3">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="preview.html">
+                  <span data-feather="home"></span>
+                  Datos
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="productos.html">
+                  <span data-feather="file"></span>
+                  Productos
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                  <span data-feather="shopping-cart"></span>
+                  Mapa de ventas
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="bank.html">
+                  <span data-feather="users"></span>
+                  Bank
+                </a>
+              </li>
+            </ul>
+
+            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+              <span>Reportes</span>
+              <a class="link-secondary" href="#" aria-label="Add a new report">
+                <span data-feather="plus-circle"></span>
+              </a>
+            </h6>
+            <ul class="nav flex-column mb-2">
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="file-text"></span>
+                  Mes actual
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="file-text"></span>
+                  Último trimestre
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+            <h1 class="h2">PREGUNTAS DE EXPLORACIÓN</h1>
+          </div>
+          <h5></h5>
+          <div class="table-responsive">
+            <figure class="highcharts-figure">
+              <div id="column_range"></div>
+              <p class="highcharts-description">
+                
+              </p>
+            </figure>  
+            
+            <figure class="highcharts-figure">
+              <div id="column_min"></div>
+              <p class="highcharts-description">
+                En el gráfico Column Range podemos visualizar el mínimo y el máximo del precio final de los productos, 
+                la razón por la cual hay un precio total más bajo que el precio unitario de los productos es porque a éstos les 
+                afectan variables como la cantidad de unidades y el descuento ofrecido por la empresa.
+              </p>
+            </figure>  
+           
+
+            <figure class="highcharts-figure">
+              <div id="column_line_pie"></div>
+              <p class="highcharts-description">
+                  A basic column chart compares rainfall values between four cities.
+                  Tokyo has the overall highest amount of rainfall, followed by New York.
+                  The chart is making use of the axis crosshair feature, to highlight
+                  months as they are hovered over.
+              </p>
+            </figure>  
+
+            <figure class="highcharts-figure">
+              <div id="pie"></div>
+              <p class="highcharts-description">
+                  A basic column chart compares rainfall values between four cities.
+                  Tokyo has the overall highest amount of rainfall, followed by New York.
+                  The chart is making use of the axis crosshair feature, to highlight
+                  months as they are hovered over.
+              </p>
+            </figure> 
+
+            <figure class="highcharts-figure">
+              <div id="pie_tallas"></div>
+              <p class="highcharts-description">
+                  A basic column chart compares rainfall values between four cities.
+                  Tokyo has the overall highest amount of rainfall, followed by New York.
+                  The chart is making use of the axis crosshair feature, to highlight
+                  months as they are hovered over.
+              </p>
+            </figure> 
+
+            <figure class="highcharts-figure">
+              <div id="stacked_column"></div>
+              <p class="highcharts-description">
+                  A basic column chart compares rainfall values between four cities.
+                  Tokyo has the overall highest amount of rainfall, followed by New York.
+                  The chart is making use of the axis crosshair feature, to highlight
+                  months as they are hovered over.
+              </p>
+            </figure> 
+
+          </div>
+        </main>
+      </div>
+    </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  <!-- Importando highcharts -->
+  
+  <!--Column range-->
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/highcharts-more.js"></script>
+  <script src="https://code.highcharts.com/modules/exporting.js"></script>
+  <script src="https://code.highcharts.com/modules/export-data.js"></script>
+  <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+  <script src="./graficos/column_range.js"></script>
+
+  <!--Column mínimos-->
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/modules/exporting.js"></script>
+  <script src="https://code.highcharts.com/modules/export-data.js"></script>
+  <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+  <script src="./graficos/column_min.js"></script>
+
+  <!--Column line and pie-->
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/modules/series-label.js"></script>
+  <script src="https://code.highcharts.com/modules/exporting.js"></script>
+  <script src="https://code.highcharts.com/modules/export-data.js"></script>
+  <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+  
+  <script src="./graficos/column_line_pie.js"></script>
+
+  <!--Pie-->
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/modules/variable-pie.js"></script>
+  <script src="https://code.highcharts.com/modules/exporting.js"></script>
+  <script src="https://code.highcharts.com/modules/export-data.js"></script>
+  <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+  <script src="./graficos/pie.js"></script>
+
+  <!--Stacked column-->
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/modules/exporting.js"></script>
+  <script src="https://code.highcharts.com/modules/export-data.js"></script>
+  <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+  <script src="./graficos/stacked_column.js"></script>
+
+  </body>
+</html>
